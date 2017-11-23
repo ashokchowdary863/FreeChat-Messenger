@@ -1,4 +1,4 @@
-package com.ashok.dev.Messenger_JAX_RS;
+package com.ashok.dev.Messenger_JAX_RS.Resources;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import javax.ws.rs.GET;
@@ -10,7 +10,7 @@ import com.ashok.dev.Messenger_JAX_RS.*;
  * Root resource (exposed at "myresource" path)
  */
 @Path("TestAPI")
-public class MyResource {
+public class TestResource {
 
     /**
      * Method handling HTTP GET requests. The returned object will be sent
@@ -31,11 +31,9 @@ public class MyResource {
     public String sayBye() {
 		ObjectMapper mapper = new ObjectMapper();
 		String jsonInString = null;
-		Person person=new Person();
-		person.setId("N110863");
-		person.setName("Ashok Kumar Karasala");
+		
 		try {
-			jsonInString = mapper.writeValueAsString(person);
+			jsonInString = mapper.writeValueAsString("Ashok Kumar Karasala");
 		} catch (JsonProcessingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+
+.panel-footer-custom{
+	text-align:right;
+	font-size:12px;
+}
+
+.brand-icon{
+	width:20px;
+	height:20px;
+	display:inline!important;
+}
+
+.last-seen{
+	font-size:10px;
+}

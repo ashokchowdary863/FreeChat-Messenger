@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Styles/app.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="Scripts/App.js"></script>
+  
+</head>
+<body>
+
+
+  
+<div class="container">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img class="brand-icon" src="Images/Icons/brand_icon.jpg"/> Free Chat</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Dashboard</a></li>
+      
+      <li><a href="pages/feeds.html">Feeds</a></li>
+      <li><a href="pages/messages.html">Messages</a></li>
+      <li><a href="pages/users.html">Users</a></li>
+       
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+  <div id="dashboard" class="col-md-12">
+  	<div id="panel1" class="col-md-12">
+  		<div id="messages" class="col-md-7">
+  			<div class="panel panel-success">
+			    <div class="panel-heading">Recent Messages</div>
+			    <div class="panel-body">Recent messages will be displayed here</div>
+			    <div class="panel-footer panel-footer-custom"><a href="pages/messages.html">click to load all messages</a></div>
+		  	</div>
+	  		
+  		</div>
+  		
+  		<div  id="users" class="col-md-5">
+  			<div class="panel panel-warning">
+			    <div class="panel-heading">Recent active users</div>
+			    <div class="panel-body"></div>
+			    <div class="panel-footer panel-footer-custom"><a href="pages/users.html">click to load all users</a></div>
+		  	</div>
+  		</div>
+  		
+  	</div>
+  	<div id="panel2" class="col-md-12">
+  	<div id="feeds" class="col-md-12">
+		  	<div class="panel panel-info">
+			    <div class="panel-heading">Recent feeds</div>
+			    <div class="panel-body">Recent feeds will be displayed here</div>
+			    <div class="panel-footer panel-footer-custom"><a href="pages/feeds.html">click to load all feeds</a></div>
+		  	</div>
+  	</div>
+  	</div>
+  	<div class="hidden">
+  	<div id="activeUserRow"class="col-md-12">
+  	    <div class="col-md-1"></div>
+  		<div class="col-md-5"><a></a></div>
+  		<div class="col-md-5"><i class="last-seen"></i></div>  		
+  	</div>
+  	</div>
+  	
+  </div>
+</div>
+
+</body>
+</html>

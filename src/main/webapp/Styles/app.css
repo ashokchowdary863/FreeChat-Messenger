@@ -14,3 +14,14 @@
 .last-seen{
 	font-size:10px;
 }
+
+.heading-style{
+	font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	font-weight:bold;
+	margin-left:15px;
+}

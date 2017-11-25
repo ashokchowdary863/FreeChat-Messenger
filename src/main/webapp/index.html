@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>FreeChat</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -19,14 +19,14 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><img class="brand-icon" src="Images/Icons/brand_icon.jpg"/> Free Chat</a>
+      <a class="navbar-brand heading-style" href="#"><img class="brand-icon" src="Images/Icons/brand_icon.jpg"/> Free Chat</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="index.html">Dashboard</a></li>
+      <li onclick="loadDashboard();"><a href="#">Dashboard</a></li>
       
-      <li><a href="pages/feeds.html">Feeds</a></li>
-      <li><a href="pages/messages.html">Messages</a></li>
-      <li><a href="pages/users.html">Users</a></li>
+      <li onclick="loadFeeds();"><a href="#">Feeds</a></li>
+      <li onclick="loadMessages();"><a href="#">Messages</a></li>
+      <li onclick="loadUsers();"><a href="#">Users</a></li>
        
     </ul>
     <ul class="nav navbar-nav navbar-right">
@@ -36,43 +36,56 @@
   </div>
 </nav>
   <div id="dashboard" class="col-md-12">
+  <h3 class="heading-style col-md-12">Dashboard</h3>
   	<div id="panel1" class="col-md-12">
-  		<div id="messages" class="col-md-7">
+  		<div id="messages-db" class="col-md-7">
   			<div class="panel panel-success">
 			    <div class="panel-heading">Recent Messages</div>
 			    <div class="panel-body">Recent messages will be displayed here</div>
-			    <div class="panel-footer panel-footer-custom"><a href="pages/messages.html">click to load all messages</a></div>
+			    <div class="panel-footer panel-footer-custom"><a href="#" onclick="loadMessages();">click to load all messages</a></div>
 		  	</div>
 	  		
   		</div>
   		
-  		<div  id="users" class="col-md-5">
+  		<div  id="users-db" class="col-md-5">
   			<div class="panel panel-warning">
 			    <div class="panel-heading">Recent active users</div>
 			    <div class="panel-body"></div>
-			    <div class="panel-footer panel-footer-custom"><a href="pages/users.html">click to load all users</a></div>
+			    <div class="panel-footer panel-footer-custom"><a href="#" onclick="loadUsers();">click to load all users</a></div>
 		  	</div>
   		</div>
   		
   	</div>
   	<div id="panel2" class="col-md-12">
-  	<div id="feeds" class="col-md-12">
+  	<div id="feeds-db" class="col-md-12">
 		  	<div class="panel panel-info">
 			    <div class="panel-heading">Recent feeds</div>
 			    <div class="panel-body">Recent feeds will be displayed here</div>
-			    <div class="panel-footer panel-footer-custom"><a href="pages/feeds.html">click to load all feeds</a></div>
+			    <div class="panel-footer panel-footer-custom"><a href="#" onclick="loadFeeds();">click to load all feeds</a></div>
 		  	</div>
   	</div>
   	</div>
-  	<div class="hidden">
-  	<div id="activeUserRow"class="col-md-12">
-  	    <div class="col-md-1"></div>
-  		<div class="col-md-5"><a></a></div>
-  		<div class="col-md-5"><i class="last-seen"></i></div>  		
-  	</div>
-  	</div>
-  	
   </div>
+  
+  <div id="users">
+  	<h3 class="heading-style col-md-12">Users</h3>
+  </div>
+  
+  <div id="feeds">
+  		  <h3 class="heading-style col-md-12">Feeds</h3>
+  </div>
+  
+    <div id="messages">
+  		  <h3 class="heading-style col-md-12">Messages</h3>
+  </div>  
+  
+    <div class="hidden">
+	  	<div id="activeUserRow"class="col-md-12">
+	  	    <div class="col-md-1"></div>
+	  		<div class="col-md-5"><a></a></div>
+	  		<div class="col-md-5"><i class="last-seen"></i></div>  		
+	  	</div>
+  	</div>
 </div>
 
 </body>

@@ -6,6 +6,15 @@ This project still in development mode.I am implementing all the features that a
 
 This project  will give you basic idea of how to write API's using Restful Web Services in Java.
 
+# Softwares/Technologies Used
+ * Java 8
+ * Eclipse Neon EE
+ * Maven
+ * Jersey vesion : 2.25.1
+ * Apache Tomcat 8.5
+ * Front end : HTML,Javascript,jQuery,CSS
+ 
+
 
 # About JAX-RS
 

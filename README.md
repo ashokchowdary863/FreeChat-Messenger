@@ -1,3 +1,7 @@
+# Important Note 
+This project still in development mode.I am implementing all the features that are needed for a chatting website.Fork/follow the repository to get the updates :)
+
+
 # Messenger_JAX-RS
 
 This project  will give you basic idea of how to write API's using Restful Web Services in Java.
@@ -27,3 +31,7 @@ In addition, it provides further annotations to method parameters to pull inform
     @FormParam binds the method parameter to a form value.
     @DefaultValue specifies a default value for the above bindings when the key is not found.
     @Context returns the entire context of the object (for example @Context HttpServletRequest request).
+
+# Screenshots
+
+![alt text](https://github.com/ashokchowdary863/Messenger_JAX-RS/raw/master/Screenshots/Dashboard.png)

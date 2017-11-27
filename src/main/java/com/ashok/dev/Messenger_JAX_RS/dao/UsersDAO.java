@@ -66,7 +66,7 @@ public class UsersDAO {
 		try{
 		 connection=new ConnectionHelper().getConnection();
 		 statement=connection.createStatement();
-		 resultSet=statement.executeQuery("select * from users order by last_login_datetime limit 5");
+		 resultSet=statement.executeQuery("select * from users order by last_login_datetime DESC limit 5");
 		while(resultSet.next()){
 			User user=new User(resultSet.getInt("user_id"),resultSet.getString("username"),resultSet.getString("firstname"),resultSet.getString("lastname"),resultSet.getString("last_login_datetime"),resultSet.getString("gender"),resultSet.getString("email"),resultSet.getString("mobile"));
 			users.add(user);

@@ -39,17 +39,68 @@
   <h3 class="heading-style col-md-12">Dashboard</h3>
   	<div id="panel1" class="col-md-12">
   		<div id="messages-db" class="col-md-7">
-  			<div class="panel panel-success">
-			    <div class="panel-heading">Recent Messages</div>
-			    <div class="panel-body">Recent messages will be displayed here</div>
+  			<div class="panel panel-success ">
+			    <div class="panel-heading panel-header-custom">Recent Messages</div>
+			    <div class="panel-body">
+						 <div class="row">
+       
+    <hr>
+
+        <div class="col-sm-9 col-md-12">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#recent" data-toggle="tab"><span class="glyphicon glyphicon-inbox">
+                </span> Recent</a></li>
+                <li><a href="#sent" data-toggle="tab"><span class="glyphicon glyphicon-user"></span>
+                    Sent</a></li>
+                <li><a href="#recieved" data-toggle="tab"><span class="glyphicon glyphicon-tags"></span>
+                     Recieved</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="recent">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            
+                            <span class="name" style="min-width: 120px;
+                                display: inline-block;">Mark Otto</span> <span class="">Nice work on the lastest version</span>
+                            <span class="text-muted" style="font-size: 11px;">- More content here</span> <span class="badge">12:10 AM</span> <span class="pull-right"></span></a><a href="#" class="list-group-item">
+                                   
+                                    <span class="name" style="min-width: 120px;
+                                        display: inline-block;">Jason Markus</span> <span class="">This is big title</span>
+                                    <span class="text-muted" style="font-size: 11px;">- I saw that you had..</span> <span class="badge">12:09 AM</span> <span class="pull-right"></span></a>
+                                    
+                                    <a href="#" class="list-group-item read">
+                                        
+                                            <span class="name" style="min-width: 120px;
+                                                display: inline-block;">Jane Patel</span> <span class="">This is big title</span>
+                                            <span class="text-muted" style="font-size: 11px;">- Hi hello how r u ?</span> <span class="badge">11:30 PM</span> </span></a>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="sent">
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <span class="text-center">This tab is empty.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="recieved">
+                    ...</div>
+
+            </div>
+            
+        </div>
+    </div>
+
+				</div>
 			    <div class="panel-footer panel-footer-custom"><a href="#" onclick="loadMessages();">click to load all messages</a></div>
 		  	</div>
 	  		
   		</div>
   		
   		<div  id="users-db" class="col-md-5">
-  			<div class="panel panel-warning">
-			    <div class="panel-heading">Recent active users</div>
+  			<div class="panel panel-warning ">
+			    <div class="panel-heading panel-header-custom">Recent active users</div>
 			    <div class="panel-body"></div>
 			    <div class="panel-footer panel-footer-custom"><a href="#" onclick="loadUsers();">click to load all users</a></div>
 		  	</div>
@@ -58,8 +109,8 @@
   	</div>
   	<div id="panel2" class="col-md-12">
   	<div id="feeds-db" class="col-md-12">
-		  	<div class="panel panel-info">
-			    <div class="panel-heading">Recent feeds</div>
+		  	<div class="panel panel-info ">
+			    <div class="panel-heading panel-header-custom">Recent feeds</div>
 			    <div class="panel-body">Recent feeds will be displayed here</div>
 			    <div class="panel-footer panel-footer-custom"><a href="#" onclick="loadFeeds();">click to load all feeds</a></div>
 		  	</div>

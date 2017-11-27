@@ -46,7 +46,7 @@ function loadActiveUsers(){
 			  $(children[0]).html(id);
 			  var anchor=$(children[1]).find("a");
 			  $(anchor).attr("onclick","loadConversation('"+value.userName+"')");
-			  $(anchor).html(value.firstName);
+			  $(anchor).html(value.firstName+" "+value.lastName);
 			  $(children[2]).find("i").html("Last seen at "+value.lastLoginDate.substring(0,value.lastLoginDate.length-2));
 			  $('#users-db').find(".panel-body").append(row);
 			  id++;

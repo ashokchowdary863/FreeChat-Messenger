@@ -21,7 +21,7 @@ public class MessagesBO {
 	public String getRecentMessages(String userName) throws SQLException{
 		Gson gson=new Gson();
 		MessagesDAO messagesDAO=new MessagesDAO();
-		RecentMessages recentMessages=new RecentMessages(messagesDAO.getRecentMessages(userName),messagesDAO.getSentMessages(userName, 5),messagesDAO.getRecivedMessages(userName, 5));
+		RecentMessages recentMessages=new RecentMessages(messagesDAO.getRecentMessages(userName,5),messagesDAO.getSentMessages(userName, 5),messagesDAO.getRecivedMessages(userName, 5));
 		String recentMessagesString=gson.toJson(recentMessages);
 		System.out.println(recentMessagesString);
 		return recentMessagesString;

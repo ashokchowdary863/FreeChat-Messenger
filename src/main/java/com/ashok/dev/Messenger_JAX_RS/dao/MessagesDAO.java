@@ -37,15 +37,19 @@ public class MessagesDAO {
 		
 	}
 	
-	public ArrayList<Message> getRecentMessages(String userName) throws SQLException{
+	public ArrayList<Message> getRecentMessages(String userName,int limit) throws SQLException{
 		ArrayList<Message> messages=new ArrayList<Message>();
 		Connection connection=null;
 		Statement statement=null;
 		ResultSet resultSet=null;
+		String query="select * from messages where message_id in (select max(message_id) from messages where message_from='"+userName+"' or message_to='"+userName+"' group by if(message_from='"+userName+"',message_to,message_from)) order by send_time desc";
 		try{
+		if(limit!=0){
+			query=query+" limit "+limit;
+		}
 		 connection=new ConnectionHelper().getConnection();
 		 statement=connection.createStatement();
-		 resultSet=statement.executeQuery("select * from messages where message_from='"+userName+"' or message_to='"+userName+"' order by send_time  limit 5;");
+		 resultSet=statement.executeQuery(query);
 		while(resultSet.next()){
 			Message message=new Message(resultSet.getInt("message_id"),resultSet.getString("message_from"),resultSet.getString("message_to"),resultSet.getString("message"),resultSet.getString("send_time"),resultSet.getInt("recipt_read"));
 			messages.add(message);

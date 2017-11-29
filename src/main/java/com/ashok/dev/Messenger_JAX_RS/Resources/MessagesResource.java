@@ -10,6 +10,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import com.ashok.dev.Messenger_JAX_RS.Models.RecentMessages;
 import com.ashok.dev.Messenger_JAX_RS.bo.MessagesBO;
 import com.ashok.dev.Messenger_JAX_RS.bo.UsersBO;
 import com.ashok.dev.Messenger_JAX_RS.dao.UsersDAO;
